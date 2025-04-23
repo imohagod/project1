@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper {
+    background: #E6EDE6; /* полупрозрачный фон, чтобы текст читался */
+    width: 100%;
+    padding-left: 103px;
+    padding-right: 103px;
+    padding-top: -70px;
+    padding-bottom: -350px;
+}
+
+.content h2 {
+    padding-top: 140px;
+    padding-left: 10%;
+    font-family: 'Anonymous Pro';
+    font-size: 24px;
+    font-weight: bold;
+    color: #ED6A30;
+}
+
+.content h1 {
+    padding-left: 10%;
+    font-family: 'Anonymous Pro';
+    font-size: 50px;
+    font-weight: bold;
+    color: #0E0E0F;
+    padding-top: 16px;
+    width: 450px;
+}
+
+.content p {
+    padding-left: 10%;
+    font-family: 'Schibsted Grotesk';
+    font-size: 26px;
+    font-weight: medium;
+    color: #5E605F;
+    padding-top: 25px;
+    width: 860px;
+    line-height: 35px;
+}
+
+.content .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 48px;
+    font-family: 'Schibsted Grotesk';
+    font-size: 21px;
+    background: #FC6723;
+    color: #FEE3C8;
+    border-radius:32px;
+    padding: 15px 3px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;  /* Элементы будут расположены по вертикали */
+    justify-content: center; /* Центрируем элементы по вертикали */
+    align-items: center;     /* Центрируем элементы по горизонтали */
+}
+
+.hero--info {
+    text-align: center;      /* Центрируем текст внутри блока */
+}
+
+.content {
+    display: flex;
+    width: 100%;
+}
+
+.image-section {
+    flex: 1; /* Левая половина с изображением */
+    background-image: url('../img/6.webp'); /* Путь к картинке */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 710px;
+    width: 880px; /* Высота изображения */
+    margin-bottom: 50px;
+}
+
+.text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}

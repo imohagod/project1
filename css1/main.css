@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper {
+    background: #FAEAD1; /* полупрозрачный фон, чтобы текст читался */
+    width: 100%;
+}
+
+.container {
+    width: 1760px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* --- HEADER --- */
+header {
+    padding: 10px 0;
+    background: transparent;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.logo-img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+
+.logo {
+    font-family: 'DM Sans';
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: #908B86;
+    font-weight: 500;
+}
+
+nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 5px solid;
+}
+
+nav ul li.btn a {
+    background: #215248;
+    padding: 9px 17px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* --- HERO SECTION --- */
+.hero--info h1 {
+    font-family: 'Anonymous Pro';
+    font-size: 96px;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+.hero--info p {
+    font-family: 'Schibsted Grotesk';
+    font-size: 21px;
+    font-weight: 500;
+    color: #84817C;
+    padding-top: 38px;
+    padding-bottom: 53px;
+    line-height: 36px;
+    width: 739px;
+}
+
+.hero--info .btn {
+    font-family: 'Schibsted Grotesk';
+    background: #F3702C;
+    color: #FFDBBA;
+    border-radius: 7px;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    background-image: url('../img/3.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 130vh;
+    display: block; /* раньше был flex */
+    padding-top: 9%;  /* отступ сверху как раньше */
+    padding-left: 12.3%; /* отступ слева */
+}
+
+.hero--info {
+    width: 780px;
+    /* убираем padding-top и padding-left отсюда, теперь они в .hero */
+}
+
+.hero--info .btn2 {
+    font-family: 'Schibsted Grotesk';
+    background: transparent;
+    color: #645C55;
+    border-radius: 7px;
+    padding: 15px 30px;
+    outline: none;
+    border: 2px solid #DAD1BF;
+    cursor: pointer;
+
+}
